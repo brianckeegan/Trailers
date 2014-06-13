@@ -1,13 +1,22 @@
 Trailers
 ========
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+I personally enjoy watching movie trailers. Sure they're just ads, but there's something about how the story is boiled down into two minutes and thirty seconds of dramatic cuts and exciting music. But I have also noticed that many movie trailers have a tendency to rely on similar songs and musical scores, even if these don't appear in the movie itself. For example, the recently released trailer for "If I Stay" features an ethereal electronic song.
 
+[!["If I Stay" trailer](http://img.youtube.com/vi/qFO2aPa904A/0.jpg)](http://www.youtube.com/watch?v=qFO2aPa904A)
+
+I swore I had heard this song featured prominently before in another movie. Sure enough, it was also used in Andy and Lana Wachowski's "Cloud Atlas":
+[!["Cloud Atlas" trailer](http://img.youtube.com/vi/hWnAqFyaQ5s/0.jpg)](http://www.youtube.com/watch?v=hWnAqFyaQ5s)
+
+It turns out the song is named "Outro" by the French electronic group, M83. For me, this raised the question of how much do movie trailers share music in common? 
+[!["Outro" by M83](http://img.youtube.com/vi/eSPCeHbhScU/0.jpg)](http://www.youtube.com/watch?v=eSPCeHbhScU)
 
 I used data gathered by [SoundTrack.net](http://www.soundtrack.net/trailers/) that identifies the music used in music trailers. I use data since 1980 to reflect the "modern" Hollywood era of commercial studios and blockbusters. While many types of trailers exist -- TV spots, teasers, internet, etc. -- I focus solely on the "full" theatrical trailers that run for approximately 2 minutes and 30 seconds. There are some caveats to these data as they are manually coded from user submissions and there is substantial variability in their coverage -- 161 movies are recorded in 2004 but only 35 in 2013. 
 
 Like a social network of friends connected to friends, these data form a network of songs connected to movies. Some songs are used many times across multiple movies' trailers and some trailers contain multiple songs. Rather than being normally distributed, the number of trailers using a particular song and the number of songs in a particular trailer are both extremely skewed "long tail" distributions.
 ![Frequency](degree_distribution.png)
+
+It's actually remarkable to think that some movie trailers are able to cram in nearly 20 different songs into a 150-second clip. I've tried to watch and listen to a few of these trailers, but I admit I had a hard time counting more than a dozen.
 
 Movie | Year | Songs
 --- | --- | ---
@@ -37,11 +46,31 @@ Returning back to the network concept of songs connected to movies, how has the 
 
 ![Clustering over time](clustering.png)
 
+Are there differences between directors in their use of songs in movie trailers? Grouping the movies by their director and then selecting only those directors who have 5 or more movies in the corpus, we can compare directors who like frenetic trailer scores to those who like simple trailer scores.
+
+Director | Films in data | Average songs per trailer
+--- | --- | ---
+Sam Raimi | 5 | 6.6
+Robert Zemeckis | 5 | 6.2
+Gore Verbinski | 6 | 5.67
+And & Lana Wachowski | 5 | 5.6
+Michael Bay | 7 | 3.85
+Ron Howard | 7 | 3.85
+
+irector | Films in data | Average songs per trailer
+--- | --- | ---
+Chris Columbus | 5 | 1.2
+James Foley | 5 | 1.2
+Dennie Dugan | 5 | 1.4
+Joel Schumacher | 7 | 1.57
+Paul Verhoeven | 5 | 1.6
+Brian Robbins | 5 | 1.8
+
 How does the number of songs per trailer vary across genres? Looking at differen genres of movies (as classified by [The-Numbers.com](http://www.the-numbers.com)), there are some significant differences. Action, adventure, and western films contain more than 3 songs per trailer on average while black comedy and documentary trailers have fewer than 2 on average. 
 
 ![Average trailer songs by genre](genre.png)
 
-How does the number of songs per trailer vary by the movie's MPAA rating? There's less evidence of significant differences in the variation we observe here.
+How does the number of songs per trailer vary by the movie's MPAA rating? There's less evidence of significant differences in the variation we observe here. G and PG13 movies have marginally more songs per trailer than PG or R movie trailer, while NC-17 movies (rare as they are) contain only 1.5 on average.
 
 ![Average trailer songs by rating](rating.png)
 
