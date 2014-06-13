@@ -6,7 +6,7 @@ I personally enjoy watching movie trailers. Sure they're just ads, but there's s
 [!["If I Stay" trailer](http://img.youtube.com/vi/qFO2aPa904A/0.jpg)](http://www.youtube.com/watch?v=qFO2aPa904A)
 
 I swore I had heard this song featured prominently before in another movie. Sure enough, it was also used in Andy and Lana Wachowski's "Cloud Atlas":
-[!["Cloud Atlas" trailer](http://img.youtube.com/vi/hWnAqFyaQ5s/0.jpg)](http://www.youtube.com/watch?v=hWnAqFyaQ5s)
+[!["Cloud Atlas" trailer](http://img.youtube.com/vi/hWnAqFyaQ5s/0.jpg)](http://www.youtube.com/watch?v=hWnAqFyaQ5s&t=3m16s)
 
 It turns out the song is named "Outro" by the French electronic group, M83. For me, this raised the question of how much do movie trailers share music in common? 
 [!["Outro" by M83](http://img.youtube.com/vi/eSPCeHbhScU/0.jpg)](http://www.youtube.com/watch?v=eSPCeHbhScU)
@@ -79,6 +79,8 @@ How does the number of songs per trailer vary by the movie's MPAA rating? There'
 
 ![Average trailer songs by rating](rating.png)
 
-Finally, is there a relationship between the number of songs in a trailer and the revenue of a movie? Here, I model the relationship between movie revenue and the number of songs in its trailer, while controlling for a number of other explanatory variables such as movie budget, genre, rating, year, IMDB community rating, and Metascore from movie critics. The multiple linear regression model I used explained over 50% of the variance in the data, which is pretty good. The model estimated that each additional song within a trailer had a statistically significant effect (p < .001) of increasing the revenue of a movie by 4%. This suggests that trailers with complex scores involving many songs excite audiences more, which translates into higher box office receipts. However, there's obviously a limit to how much an audience can tolerate or a trailer editor can splice into 150 seconds, so there also has to be a penalty for having many songs. Adding a quadratic term on songs, there's a statistically significant (p < .05) negative effect suggesting a concave function. This suggests more trailer songs translates into more revenue up until 10 songs, then it starts to fall again.
+Finally, is there a relationship between the number of songs in a trailer and the revenue of a movie? Here, I model the relationship between movie revenue and the number of songs in its trailer, while controlling for a number of other explanatory variables such as movie budget, genre, rating, year, IMDB community rating, and Metascore from movie critics. The multiple linear regression model I used explained over 50% of the variance in the data, which is pretty good. 
+
+The model estimated that each additional song within a trailer had a statistically significant effect (p < .001) of increasing the revenue of a movie by 9.2%. This suggests that trailers with complex scores involving many songs excite audiences more, which translates into higher box office receipts. However, there's obviously a limit to how much an audience can tolerate or a trailer editor can splice into 150 seconds, so there also has to be a penalty for having many songs. Adding a quadratic term on songs, there's a statistically significant (p < .05) negative effect suggesting a concave function. This suggests more trailer songs translates into more revenue up until around 12 songs, then revenue starts to fall again.
 
 ![Trailer songs and movie revenue](revenue_model.png)
