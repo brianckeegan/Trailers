@@ -6,17 +6,21 @@ I personally enjoy watching movie trailers. Sure they're just ads, but there's s
 [!["If I Stay" trailer](http://img.youtube.com/vi/qFO2aPa904A/0.jpg)](http://www.youtube.com/watch?v=qFO2aPa904A)
 
 I swore I had heard this song featured prominently before in another movie. Sure enough, it was also used in Andy and Lana Wachowski's "Cloud Atlas":
+
 [!["Cloud Atlas" trailer](http://img.youtube.com/vi/hWnAqFyaQ5s/0.jpg)](http://www.youtube.com/watch?v=hWnAqFyaQ5s&t=3m16s)
 
 It turns out the song is named "Outro" by the French electronic group, M83. For me, this raised the question of how much do movie trailers share music in common? 
+
 [!["Outro" by M83](http://img.youtube.com/vi/eSPCeHbhScU/0.jpg)](http://www.youtube.com/watch?v=eSPCeHbhScU)
 
 I used data gathered by [SoundTrack.net](http://www.soundtrack.net/trailers/) that identifies the music used in music trailers. I use data since 1980 to reflect the "modern" Hollywood era of commercial studios and blockbusters. While many types of trailers exist -- TV spots, teasers, internet, etc. -- I focus solely on the "full" theatrical trailers that run for approximately 2 minutes and 30 seconds. There are some caveats to these data as they are manually coded from user submissions and there is substantial variability in their coverage -- 161 movies are recorded in 2004 but only 35 in 2013. 
 
 Like a social network of friends connected to friends, these data form a network of songs connected to movies. Some songs are used many times across multiple movies' trailers and some trailers contain multiple songs. Rather than being normally distributed, the number of trailers using a particular song and the number of songs in a particular trailer are both extremely skewed "[long tail](http://en.wikipedia.org/wiki/Long_tail)" distributions. There are thousands of trailers that use only a single song and a handful of trailers that use more than a dozen. There are likewise thousands of songs that are used only once but a handful of songs that are used up to 20 times.
+
 ![Frequency](degree_distribution.png)
 
 Looking at the network of movies connected to other movies if they share a song in common, it's remarkable to see that 35% of movies released over the past 3 decades in these data are indirectly connected together by sharing common songs in their trailers. Put another way, there's a "[small world](http://en.wikipedia.org/wiki/Small-world_network)" effect where movie trailers are on average 5.34 songs in common away from any other movie trailer. We can look at what this network of movies connected by songs and see a remarkably complex and inter-connected structure of movies connected to other movies if they share a song in their theatrical trailer.
+
 ![Network of movies connected by songs](network.png)
 
 It's actually remarkable to think that some movie trailers are able to cram in nearly 20 different songs into a 150-second clip. I've tried to watch and listen to a few of these trailers, but I admit I had a hard time counting more than a dozen.
